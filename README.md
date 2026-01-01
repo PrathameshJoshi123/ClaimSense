@@ -1,8 +1,8 @@
-# Dreamflow Backend
+# ClaimSense Backend
 
 ## Overview
 
-Dreamflow Backend is a FastAPI-based microservices architecture designed for policy intelligence, recommendation, and simulation services. It integrates AI capabilities using LangChain, OpenAI, and Pinecone for advanced policy analysis and processing.
+ClaimSense Backend is a FastAPI-based microservices architecture designed for policy intelligence, recommendation, and simulation services. It integrates AI capabilities using LangChain, OpenAI, and Pinecone for advanced policy analysis and processing.
 
 ## Features
 
