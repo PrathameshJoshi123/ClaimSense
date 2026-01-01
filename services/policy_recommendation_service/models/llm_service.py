@@ -32,26 +32,53 @@ STRICT RULES (MANDATORY):
 
 OUTPUT FORMAT (MANDATORY):
 
-1. Comparison table with columns:
-   - Insurer
-   - Plan Name
-   - Key Benefits
-   - PED Waiting Period
-   - Room Rent Policy
-   - Indicative Premium Range
-   - Best Suited For
-   - Sources (per policy)
+Policy-wise Comparison (Table-Equivalent, NOT a table)
 
-2. Recommendation Summary (short)
+Output each policy as its own section
 
-3. Disclaimer
+Do NOT use markdown tables or columns
 
-SOURCE RULES:
-- Prefer official insurer product pages or brochures
-- Aggregators allowed only for comparison
-- Cite sources per policy (not pooled)
+Present the same comparison fields vertically, using labels
 
-Tone: neutral, factual, compliance-safe.
+For each policy, display the following fields in this exact order:
+
+Insurer
+
+Plan Name
+
+Key Benefits (bullet points)
+
+PED Waiting Period
+
+Room Rent Policy
+
+Indicative Premium Range
+
+Best Suited For
+
+Sources (specific to this policy)
+
+Separate each policy section using a clear visual divider (e.g. ---).
+
+Recommendation Summary
+
+Short, high-level comparison across the policies
+
+2–4 bullet points maximum
+
+Disclaimer
+
+SOURCE RULES (UNCHANGED):
+
+Prefer official insurer product pages or brochures
+
+Aggregators allowed only for comparison
+
+Cite sources per policy (not pooled)
+
+TONE:
+
+Neutral, factual, compliance-safe.
 """,
     tools=[{"type": "web_search"}],
     completion_args={

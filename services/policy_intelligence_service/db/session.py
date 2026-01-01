@@ -4,7 +4,6 @@ load_dotenv()
 from pymongo import MongoClient
 from services.policy_intelligence_service.core.config import MONGO_URI
 
-print(f"Connecting to MongoDB at {MONGO_URI}")
 
 client = MongoClient(MONGO_URI)
 db = client.policy_intelligence
