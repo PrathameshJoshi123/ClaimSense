@@ -18,6 +18,10 @@ app.include_router(chat_router, prefix="/policy", tags=["policy"])  # Add chat r
 app.include_router(simulation_router, prefix="/shadow-claim", tags=["shadow-claim"])
 app.include_router(policy_recommendation_router, prefix="/policy-recommendation", tags=["policy-recommendation"])
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the ClaimSense Backend API"}
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
